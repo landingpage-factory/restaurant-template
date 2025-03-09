@@ -34,7 +34,7 @@ export default function ContactPage() {
         setTimeout(() => {
           Math.random() > 0.5
             ? resolve()
-            : reject(new Error("Failed to send message"));
+            : reject(new Error("Nachricht konnte nicht gesendet werden"));
         }, 2000);
       });
 
@@ -116,7 +116,7 @@ export default function ContactPage() {
                     ${
                       loading
                         ? "bg-beige-gray cursor-wait"
-                        : "bg-soft-gold hover:bg-beige-gray"
+                        : "bg-soft-gold hover:bg-beige-gray hover:cursor-pointer hover:text-gray-900"
                     }
                     rounded-none border-2 border-transparent hover:border-soft-gold
                     transform hover:scale-[1.02] duration-300`}
@@ -127,8 +127,7 @@ export default function ContactPage() {
 
               {error && (
                 <div
-                  className="mt-4 p-3 bg-light-yellow text-dark-taupe border-2 border-beige-gray"
-                  data-aos="fade-up"
+                  className="mt-4 p-3 text-soft-gold "
                 >
                   Error: {error}
                 </div>
@@ -136,10 +135,9 @@ export default function ContactPage() {
 
               {success && (
                 <div
-                  className="mt-4 p-3 bg-soft-gold text-dark-taupe border-2 border-beige-gray"
-                  data-aos="fade-up"
+                  className="mt-4 p-3 text-soft-gold"
                 >
-                  Message sent successfully!
+                  Ihre Nachricht wurde erfolgreich gesendet!
                 </div>
               )}
             </form>
