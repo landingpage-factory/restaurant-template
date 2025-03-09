@@ -5,6 +5,7 @@ import PageTopButton from './components/PageTopButton';
 import About from "./about/page";
 import Menu from "./menu/page";
 import Events from "./events/page";
+import Reservierung from "./reservations/page";
 
 export default function Home() {
   useEffect(() => {
@@ -55,7 +56,7 @@ export default function Home() {
               </ScrollLink>
 
               <ScrollLink
-                to="#"
+                to="reservations"
                 smooth={true}
                 duration={800}
                 className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-8 py-4 rounded-full 
@@ -86,6 +87,7 @@ export default function Home() {
     </section>
     <Events/>
     <Menu /> 
+    <Reservierung/>
     <About/>
     {/* PageTop-Button */}
     <PageTopButton />

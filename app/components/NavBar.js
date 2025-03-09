@@ -88,6 +88,15 @@ export default function Navbar() {
           >
             Über Uns
           </ScrollLink>
+          <ScrollLink
+            to="reservations"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className="hover:text-gray-300 hover:cursor-pointer"
+          >
+            Tisch Reservierung
+          </ScrollLink>
           
           <ScrollLink
             to="contact"
@@ -160,6 +169,16 @@ export default function Navbar() {
               onClick={toggleMenu}
             >
               Über Uns
+            </ScrollLink>
+            <ScrollLink
+              to="reservations"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className="hover:text-gray-300"
+              onClick={toggleMenu}
+            >
+              Tisch Reservierung
             </ScrollLink>
             
             <ScrollLink
