@@ -39,7 +39,7 @@ export default function PageTopButton() {
     >
       <button
         onClick={scrollToTop}
-        className="bg-soft-gold text-white p-4 shadow-lg hover:bg-beige-gray hover:text-gray-900 hover:cursor-pointer transition-colors"
+        className="bg-beige-gray/40 text-white p-4 shadow-lg hover:bg-beige-gray hover:text-gray-900 hover:cursor-pointer transition-colors"
       >
         <FaArrowUp size={20} />
       </button>

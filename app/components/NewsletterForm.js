@@ -30,7 +30,7 @@ export default function NewsletterForm() {
 
   return (
     <div>
-      <form onSubmit={handleSubmit} className="flex gap-2">
+      <form onSubmit={handleSubmit} className="flex flex-col md:flex-row gap-2">
         <input
           type="email"
           name="email"
@@ -38,15 +38,20 @@ export default function NewsletterForm() {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className={`flex-1 px-4 py-2 border ${
-            error ? 'border-red-500' : 'border-gray-300'
-          } focus:outline-none focus:ring-2 focus:ring-soft-gold`}
+            error ? 'border-red-500' : 'border-gray-500'
+          } focus:outline-none focus:ring-1 focus:ring-soft-gold focus:border-soft-gold`}
+          
         />
+        <div>
+
+        
         <button
           type="submit"
           className="bg-soft-gold text-white px-6 py-2 hover:bg-[var(--beige-gray)]/75 hover:text-gray-800 hover:cursor-pointer transition-colors"
         >
           Abonnieren
         </button>
+        </div>
       </form>
 
       {/* Fehlermeldung */}

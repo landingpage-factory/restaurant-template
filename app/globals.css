@@ -57,6 +57,10 @@ body {
     background-color: rgb(182 167 123);
   }
 
+  .bg-beige-gray\/40 {
+    background-color: rgba(182, 167, 123, 0.4);
+  }
+
   .bg-soft-gold {
     background-color: var(--soft-gold);
   }
@@ -64,7 +68,7 @@ body {
   .bg-soft-gold\/40 {
     background-color: rgba(212, 175, 55, 0.4); /* Soft Gold mit 40% Opazität */
   }
-  
+    
 
   .bg-bronze-tone {
     background-color: var(--bronze-tone);
