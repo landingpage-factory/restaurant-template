@@ -43,7 +43,7 @@ export default function Navbar() {
         </div>
 
         {/* Desktop-Navigation */}
-        <div className="hidden lg:flex space-x-8 text-2xl">
+        <div className="hidden lg:flex space-x-8 text-xl">
           <ScrollLink
             to="home"
             smooth={true}

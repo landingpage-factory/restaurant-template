@@ -6,6 +6,7 @@ import About from "./about/page";
 import Menu from "./menu/page";
 import Events from "./events/page";
 import Reservierung from "./reservations/page";
+import ContactPage from "./contact/page";
 
 export default function Home() {
   useEffect(() => {
@@ -89,6 +90,7 @@ export default function Home() {
     <Menu /> 
     <Reservierung/>
     <About/>
+    <ContactPage/>
     {/* PageTop-Button */}
     <PageTopButton />
     </div>
