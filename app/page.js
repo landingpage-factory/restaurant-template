@@ -1,6 +1,7 @@
 "use client";
 import { useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
+import PageTopButton from './components/PageTopButton';
 import About from "./about/page";
 import Menu from "./menu/page";
 import Events from "./events/page";
@@ -86,7 +87,8 @@ export default function Home() {
     <Events/>
     <Menu /> 
     <About/>
-    
+    {/* PageTop-Button */}
+    <PageTopButton />
     </div>
   );
 }
