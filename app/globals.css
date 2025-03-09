@@ -1,26 +1,193 @@
+/* global.css */
+/* Importiere Tailwind */
 @import "tailwindcss";
 
+/* Definiere benutzerdefinierte Variablen im :root */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Dunkles Grau */
+  --background: #0c0b0d; 
+  /* Sanftes Weiß */
+  --foreground: #f5f3f3;
+  /* Dunkles Taupe */
+  --dark-taupe: #2e2a22;
+  /* Helles Gelb */
+  --light-yellow: #f7c500;
+  /* Beiges Grau */
+  --beige-gray: #b6a77b;
+  /* Sanftes Gold */
+  --soft-gold: #d4b46d;
+  /* Warmer Bronze-Ton */
+  --bronze-tone: #c39c5f;
+  
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+html {
+  scroll-behavior: auto;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
+/* Grundlegende Stile für den body */
 body {
-  background: var(--background);
+  background-color: var(--background);
+  font-family: var(--font-poppins), Arial, Helvetica, sans-serif;
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
 }
+
+/* Erweiterung für die Verwendung von Tailwind mit benutzerdefinierten Farben */
+@layer base {
+
+  /* Hintergrundfarben */
+  .bg-background {
+    background-color: var(--background);
+  }
+
+  .bg-dark-taupe {
+    background-color: var(--dark-taupe);
+  }
+
+  .bg-light-yellow {
+    background-color: var(--light-yellow);
+  }
+
+  .bg-beige-gray {
+    background-color: var(--beige-gray);
+  }
+
+  .hover\:bg-beige-gray:hover {
+    background-color: rgb(182 167 123);
+  }
+
+  .bg-soft-gold {
+    background-color: var(--soft-gold);
+  }
+
+  .bg-soft-gold\/40 {
+    background-color: rgba(212, 175, 55, 0.4); /* Soft Gold mit 40% Opazität */
+  }
+  
+
+  .bg-bronze-tone {
+    background-color: var(--bronze-tone);
+  }
+
+  /* Textfarben */
+  .text-foreground {
+    color: var(--foreground);
+  }
+
+  .hover\:text-foreground:hover {
+    color: var(--foreground);
+  }
+
+  .text-dark-taupe {
+    color: var(--dark-taupe);
+  }
+
+  .text-light-yellow {
+    color: var(--light-yellow);
+  }
+
+  .text-beige-gray {
+    color: var(--beige-gray);
+  }
+
+  .text-soft-gold {
+    color: var(--soft-gold);
+  }
+  .hover\:text-soft-gold:hover {
+    color: var(--soft-gold);
+  }
+
+  .text-bronze-tone {
+    color: var(--bronze-tone);
+  }
+
+  /* Border-Farben */
+  .border-foreground {
+    border-color: var(--foreground);
+  }
+
+  .hover\:border-foreground:hover {
+    border-color: var(--foreground);
+  }
+
+  .border-dark-taupe {
+    border-color: var(--dark-taupe);
+  }
+
+  .border-light-yellow {
+    border-color: var(--light-yellow);
+  }
+
+  .border-beige-gray {
+    border-color: var(--beige-gray);
+  }
+
+  .border-soft-gold {
+    border-color: var(--soft-gold);
+  }
+
+  .border-bronze-tone {
+    border-color: var(--bronze-tone);
+  }
+
+}
+
+/* Globale Scrollbar für die gesamte Seite */
+::-webkit-scrollbar {
+  width: 8px;
+  /* Dünn und modern */
+}
+
+/* Hintergrund der Scrollbar */
+::-webkit-scrollbar-track {
+  background: #1f1f1f;
+  /* Passend zum Dark Theme */
+}
+
+/* Der Scrollbar-Griff */
+::-webkit-scrollbar-thumb {
+  background: #444;
+  /* Dunkler Griff */
+  border-radius: 6px;
+  /* Leicht abgerundet */
+}
+
+/* Beim Hover heller machen */
+::-webkit-scrollbar-thumb:hover {
+  background: #666;
+}
+
+
+
+.bg-fixed {
+  background-attachment: fixed;
+}
+
+/* Swiper CSS */
+.events-slider .swiper-pagination-bullet {
+  background-color: #c0a062; /* Goldfarbe */
+  opacity: 0.5; /* Halbtransparent */
+  width: 12px;
+  height: 12px;
+  margin: 0 8px !important;
+  margin-top: 16px;
+}
+
+.events-slider .swiper-pagination-bullet-active {
+  background-color: #c0a062; /* Goldfarbe */
+  opacity: 1; /* Volle Deckkraft */
+}
+
+/* Common Styles */
+.swiper-pagination-fraction,
+.swiper-pagination-custom,
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: var(--swiper-pagination-bottom, 8px);
+  top: var(--swiper-pagination-top, auto);
+  left: 0;
+  width: 100%;
+}
+
+
