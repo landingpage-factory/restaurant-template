@@ -1,15 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Setze `output` auf 'export', um statische HTML-Seiten zu erstellen
-    output: 'export',
-  
-    // Konfiguration für Bilder (Optional: unoptimierte Bilder)
-    images: {
-      unoptimized: true,
-    },
+  output: 'export',  // Für den statischen Export
+  trailingSlash: true,  // Optional: URLs mit einem abschließenden Slash
+};
 
-  };
-  
-  export default nextConfig;
-  
-
+export default nextConfig;
