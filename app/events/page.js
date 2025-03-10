@@ -12,7 +12,6 @@ const events = [
   {
     id: 1,
     title: "Geburtstagsfeiern",
-    price: "189 €",
     image: "/images/events/birthday.jpg",
     description: "Feiern Sie Ihren besonderen Tag mit uns!",
     details: [
@@ -24,7 +23,6 @@ const events = [
   {
     id: 2,
     title: "Private Feiern",
-    price: "290 €",
     image: "/images/events/private.jpg",
     description: "Exklusive Veranstaltungen für Ihre Gäste.",
     details: [
@@ -36,7 +34,6 @@ const events = [
   {
     id: 3,
     title: "Firmenevents",
-    price: "99 €",
     image: "/images/events/corporate.jpg",
     description: "Professionelle Veranstaltungen für Ihr Unternehmen.",
     details: [
@@ -141,9 +138,6 @@ export default function Events() {
                         {event.title}
                       </h3>
                       <div className="text-lg font-semibold text-light-yellow mb-4">
-                        <p>
-                          <span>{event.price}</span>
-                        </p>
                       </div>
                       <p className="italic text-gray-300 mb-4">
                         {event.description}

@@ -139,6 +139,7 @@ export default function Footer() {
               <a
                 href="https://github.com/landingpage-factory"
                 className="text-soft-gold hover:text-foreground"
+                target='_blank'
               >
                 Landingpage Factory🚀
               </a>
