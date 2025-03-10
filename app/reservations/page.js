@@ -203,14 +203,14 @@ export default function Reservierung() {
 
             {/* Fehlermeldung */}
             {error && (
-              <p className="text-light-yellow text-sm mt-4" data-aos="fade-up">
+              <p className="text-light-yellow text-sm mt-4">
                 {error}
               </p>
             )}
 
             {/* Erfolgsmeldung */}
             {success && (
-              <p className="text-soft-gold text-sm mt-4" data-aos="fade-up">
+              <p className="text-soft-gold text-sm mt-4">
                 {success}
               </p>
             )}

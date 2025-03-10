@@ -81,7 +81,7 @@ export default function ContactPage() {
                     type="text"
                     placeholder="Name"
                     required
-                    className="w-full bg-background border-2 border-beige-gray px-4 py-3 
+                    className="w-full bg-background border-1 border-beige-gray px-4 py-3 
                       text-foreground focus:border-soft-gold focus:ring-2 focus:ring-soft-gold 
                       transition-all duration-300 rounded-none"
                   />
@@ -91,7 +91,7 @@ export default function ContactPage() {
                     type="email"
                     placeholder="Email"
                     required
-                    className="w-full bg-background border-2 border-beige-gray px-4 py-3 
+                    className="w-full bg-background border-1 border-beige-gray px-4 py-3 
                       text-foreground focus:border-soft-gold focus:ring-2 focus:ring-soft-gold 
                       transition-all duration-300 rounded-none"
                   />
@@ -103,7 +103,7 @@ export default function ContactPage() {
                   placeholder="Message"
                   rows="5"
                   required
-                  className="w-full bg-background border-2 border-beige-gray px-4 py-3 
+                  className="w-full bg-background border-1 border-beige-gray px-4 py-3 
                     text-foreground focus:border-soft-gold focus:ring-2 focus:ring-soft-gold 
                     transition-all duration-300 rounded-none"
                 />
