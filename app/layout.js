@@ -14,6 +14,8 @@ const poppins = Poppins({
 export const metadata = {
   title: "Restaurant Template",
   description: "Modern und anpassbares Template für Restaurant-Websites, entwickelt mit Next.js und Tailwind CSS. Perfekt für Restaurants, Cafés und mehr.",
+  author: "Landingpage Factory",
+  license: "https://github.com/landingpage-factory/restaurant-template/blob/master/LICENSE",
 };
 
 

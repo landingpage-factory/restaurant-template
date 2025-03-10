@@ -106,7 +106,9 @@ export default function Footer() {
 
             {/* Rechtliche Hinweise */}
             <div className="footer-links">
-              <h4 className="text-xl font-semibold mb-4">Rechtliche Hinweise</h4>
+              <h4 className="text-xl font-semibold mb-4">
+                Rechtliche Hinweise
+              </h4>
               <ul className="space-y-2">
                 <li className="flex items-center">
                   <PiFlowerLotusThin className="text-soft-gold mr-2" />
@@ -137,9 +139,9 @@ export default function Footer() {
         <div className="container mx-auto px-4 py-8">
           <div className="flex flex-col md:flex-row justify-between items-center text-center md:text-left">
             <div className="copyright mb-4 md:mb-0">
-              © Copyright{" "}
-              <strong className="text-soft-gold">DeinRestaurant</strong>. Alle
-              Rechte vorbehalten
+              © {new Date().getFullYear()}
+              <strong className="text-soft-gold"> DeinRestaurant</strong>. Alle
+              Rechte vorbehalten.
             </div>
             <div className="credits text-gray-400">
               Designed by{" "}
@@ -147,8 +149,18 @@ export default function Footer() {
                 href="https://github.com/landingpage-factory"
                 className="text-soft-gold hover:text-foreground"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                Landingpage Factory🚀
+                Landingpage Factory 🚀
+              </a>
+              |
+              <a
+                href="https://github.com/landingpage-factory/restaurant-template/blob/master/LICENSE"
+                className="text-soft-gold hover:text-foreground ml-2"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Lizenz & Nutzung
               </a>
             </div>
           </div>

@@ -1,5 +1,13 @@
+/* 
+Copyright (c) 2025 landingpage-factory
+Template: reastaurant-template v1.0
+Template URL: https://github.com/landingpage-factory/restaurant-template
+Author: https://github.com/landingpage-factory  
+License: https://github.com/landingpage-factory/restaurant-template/blob/master/LICENSE 
+*/
+
 /* global.css */
-/* Importiere Tailwind */
+
 @import "tailwindcss";
 
 /* Definiere benutzerdefinierte Variablen im :root */
