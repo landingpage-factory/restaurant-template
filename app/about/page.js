@@ -174,6 +174,7 @@ export default function About() {
                     alt={member.name}
                     fill
                     className="object-cover"
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   />
 
                   {/* Overlay mit Farbverlauf und sichtbarem Text */}

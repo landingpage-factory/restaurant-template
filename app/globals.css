@@ -204,3 +204,6 @@ body {
   transform: scale(1.1); /* Vergrößert den Button beim Hover */
 }
 
+.active {
+  color: var(--soft-gold); /* Goldene Farbe für aktive Links */
+}
