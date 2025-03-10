@@ -8,6 +8,7 @@ import Events from "./events/page";
 import Reservierung from "./reservations/page";
 import ContactPage from "./contact/page";
 import CateringPage from "./catering/page";
+import GalleryPage from "./gallery/page";
 
 export default function Home() {
   useEffect(() => {
@@ -50,7 +51,7 @@ export default function Home() {
                 to="menu"
                 smooth={true}
                 duration={800}
-                className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-8 py-4 rounded-full 
+                className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-8 py-4 
              font-bold uppercase tracking-wider hover:bg-[var(--beige-gray)]/75 hover:border-[var(--foreground)]
              transition-all duration-300 shadow-lg bg-gray-800/30 hover:cursor-pointer"
               >
@@ -61,7 +62,7 @@ export default function Home() {
                 to="reservations"
                 smooth={true}
                 duration={800}
-                className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-8 py-4 rounded-full 
+                className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-8 py-4  
              font-bold uppercase tracking-wider hover:bg-[var(--beige-gray)]/75 hover:border-[var(--foreground)]
              transition-all duration-300 shadow-lg bg-gray-800/30 hover:cursor-pointer"
               >
@@ -91,6 +92,7 @@ export default function Home() {
     <Menu /> 
     <CateringPage/>
     <Reservierung/>
+    <GalleryPage/>
     <About/>
     <ContactPage/>
     {/* PageTop-Button */}

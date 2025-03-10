@@ -42,7 +42,7 @@ export default function About() {
               smooth={true}
               duration={500}
               offset={-50}
-              className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-8 py-4 rounded-full 
+              className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-8 py-4 
              font-bold uppercase tracking-wider hover:bg-[var(--beige-gray)]/75 hover:border-[var(--foreground)]
              transition-all duration-300 shadow-lg bg-gray-800/30 z-50 hover:cursor-pointer"
             >

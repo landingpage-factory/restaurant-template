@@ -17,8 +17,8 @@ export default function Navbar() {
         setIsScrolled(false);
       }
 
-      const sections = ['home', 'catering', 'events', 'menu', 'about', 'reservations', 'contact'];
-      const offset = 50; // Hier definierst du den Offset, den du verwenden möchtest.
+      const sections = ['home', 'catering', 'events', 'menu', 'about', 'reservations', 'gallery', 'contact'];
+      const offset = 60; // Hier definierst du den Offset, den du verwenden möchtest.
 
       sections.forEach((section) => {
         const element = document.getElementById(section);
@@ -93,15 +93,7 @@ export default function Navbar() {
           >
             Menü
           </ScrollLink>
-          <ScrollLink
-            to="about"
-            smooth={true}
-            duration={500}
-            offset={-50}
-            className={`hover:text-gray-300 hover:cursor-pointer ${activeSection === 'about' ? 'active' : ''}`}
-          >
-            Über Uns
-          </ScrollLink>
+          
           <ScrollLink
             to="reservations"
             smooth={true}
@@ -110,6 +102,24 @@ export default function Navbar() {
             className={`hover:text-gray-300 hover:cursor-pointer ${activeSection === 'reservations' ? 'active' : ''}`}
           >
             Tisch Reservierung
+          </ScrollLink>
+          <ScrollLink
+            to="gallery"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className={`hover:text-gray-300 hover:cursor-pointer ${activeSection === 'gallery' ? 'active' : ''}`}
+          >
+            Gallerie
+          </ScrollLink>
+          <ScrollLink
+            to="about"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className={`hover:text-gray-300 hover:cursor-pointer ${activeSection === 'about' ? 'active' : ''}`}
+          >
+            Über Uns
           </ScrollLink>
           <ScrollLink
             to="contact"
@@ -174,16 +184,7 @@ export default function Navbar() {
             >
               Menü
             </ScrollLink>
-            <ScrollLink
-              to="about"
-              smooth={true}
-              duration={500}
-              offset={-50}
-              className={`hover:text-gray-300 ${activeSection === 'about' ? 'active' : ''}`}
-              onClick={toggleMenu}
-            >
-              Über Uns
-            </ScrollLink>
+            
             <ScrollLink
               to="reservations"
               smooth={true}
@@ -193,6 +194,26 @@ export default function Navbar() {
               onClick={toggleMenu}
             >
               Tisch Reservierung
+            </ScrollLink>
+            <ScrollLink
+              to="gallery"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className={`hover:text-gray-300 ${activeSection === 'gallery' ? 'active' : ''}`}
+              onClick={toggleMenu}
+            >
+              Gallerie
+            </ScrollLink>
+            <ScrollLink
+              to="about"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className={`hover:text-gray-300 ${activeSection === 'about' ? 'active' : ''}`}
+              onClick={toggleMenu}
+            >
+              Über Uns
             </ScrollLink>
             <ScrollLink
               to="contact"

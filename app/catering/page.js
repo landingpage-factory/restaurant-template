@@ -148,7 +148,7 @@ export default function CateringPage() {
       {/* Call to Action Section */}
       <div className="max-w-7xl mx-auto px-4 py-20">
         <div
-          className="bg-dark-taupe p-8 text-center"
+          className=" p-8 text-center"
           data-aos="fade-up"
           data-aos-delay="200"
         >

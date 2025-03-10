@@ -316,7 +316,7 @@ export default function Menu() {
             <a
               href="/pdf/speisekarte.pdf"
               download
-              className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-6 py-3 rounded-full 
+              className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-6 py-3 
    font-bold uppercase tracking-wider hover:bg-[var(--beige-gray)]/75 hover:border-[var(--foreground)]
    transition-all duration-300 shadow-lg bg-gray-800/30 z-50 hover:cursor-pointer
    inline-flex items-center gap-2 whitespace-nowrap"

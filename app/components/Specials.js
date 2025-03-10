@@ -127,7 +127,8 @@ export default function Specials() {
                     src={activeSpecial.image}
                     alt={activeSpecial.name}
                     fill
-                    className="object-cover"
+              sizes="(max-width: 700px) 100vw, (max-width: 768px) 50vw, 33vw"
+              className="object-cover transform transition-transform duration-300 group-hover:scale-105"
                   />
                 </div>
 
