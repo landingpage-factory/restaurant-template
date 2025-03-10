@@ -350,7 +350,7 @@ export default function Menu() {
             {filteredItems.map((item) => (
               <div
                 key={item.id}
-                className="bg-gray-900 p-4 shadow-lg hover:shadow-xl transition-shadow flex items-start gap-4"
+                className="bg-dark-taupe p-4 shadow-lg hover:shadow-xl transition-shadow flex items-start gap-4"
                 data-aos="fade-up"
               >
                 <div className="relative w-1/3 h-32 shrink-0 overflow-hidden">

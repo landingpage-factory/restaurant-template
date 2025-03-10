@@ -78,11 +78,11 @@ export default function Footer() {
                 </li>
                 <li className="flex items-center">
                   <PiFlowerLotusThin className="text-soft-gold mr-2" />
-                  {renderLink('/imprint', 'Impressum')}
+                  {renderLink('#', 'Impressum')}
                 </li>
                 <li className="flex items-center">
                   <PiFlowerLotusThin className="text-soft-gold mr-2" />
-                  {renderLink('/privacy-policy', 'Datenschutz')}
+                  {renderLink('#', 'Datenschutz')}
                 </li>
               </ul>
             </div>

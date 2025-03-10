@@ -7,6 +7,7 @@ import Menu from "./menu/page";
 import Events from "./events/page";
 import Reservierung from "./reservations/page";
 import ContactPage from "./contact/page";
+import CateringPage from "./catering/page";
 
 export default function Home() {
   useEffect(() => {
@@ -88,6 +89,7 @@ export default function Home() {
     </section>
     <Events/>
     <Menu /> 
+    <CateringPage/>
     <Reservierung/>
     <About/>
     <ContactPage/>

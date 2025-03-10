@@ -55,10 +55,10 @@ export default function About() {
       {/* Abschnitt mit Informationen über das Restaurant */}
       <div id="our-story" className="py-16 bg-background">
         <div className="max-w-6xl mx-auto leading-relaxed text-justify container px-4 py-20 relative z-10">
-          <h2 className="text-3xl font-semibold mb-4 text-center relative flex items-center justify-center">
-            <span className="flex-1 h-px bg-white/40 max-w-[120px]"></span>
+          <h2 className="text-3xl text-soft-gold font-semibold mb-4 text-center relative flex items-center justify-center">
+            <span className="flex-1 h-px bg-soft-gold/40 max-w-[120px]"></span>
             <span className="px-4">Unsere Philosophie</span>
-            <span className="flex-1 h-px bg-white/40 max-w-[120px]"></span>
+            <span className="flex-1 h-px bg-soft-gold/40 max-w-[120px]"></span>
           </h2>
           <p className="text-lg mb-6">
             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
@@ -85,12 +85,12 @@ export default function About() {
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
           <div className="max-w-6xl mx-auto leading-relaxed text-justify">
             <h2
-              className="text-3xl font-semibold mb-4 text-center relative flex items-center justify-center"
+              className="text-3xl text-soft-gold font-semibold mb-4 text-center relative flex items-center justify-center"
               data-aos="fade-up"
             >
-              <span className="flex-1 h-px bg-white/40 max-w-[120px]"></span>
+              <span className="flex-1 h-px bg-soft-gold/40 max-w-[120px]"></span>
               <span className="px-4">Unsere Werte</span>
-              <span className="flex-1 h-px bg-white/40 max-w-[120px]"></span>
+              <span className="flex-1 h-px bg-soft-gold/40 max-w-[120px]"></span>
             </h2>
             <p
               className="text-lg mt-4 mb-6 text-foreground"
@@ -128,10 +128,10 @@ export default function About() {
       <section className="py-20 bg-background">
         <div className="max-w-7xl mx-auto px-4">
           {/* Überschrift mit dekorativen Linien */}
-          <h2 className="text-3xl font-semibold mb-12 text-center relative flex items-center justify-center">
-            <span className="flex-1 h-px bg-white/40 max-w-[120px]"></span>
+          <h2 className="text-3xl font-semibold text-soft-gold mb-12 text-center relative flex items-center justify-center">
+            <span className="flex-1 h-px bg-soft-gold/40 max-w-[120px]"></span>
             <span className="px-4">Unser Team</span>
-            <span className="flex-1 h-px bg-white/40 max-w-[120px]"></span>
+            <span className="flex-1 h-px bg-soft-gold/40 max-w-[120px]"></span>
           </h2>
 
           {/* Beschreibung */}
@@ -178,13 +178,13 @@ export default function About() {
 
                   {/* Overlay mit Farbverlauf und sichtbarem Text */}
                   <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col items-center justify-end p-6 text-center">
-                    <h3 className="text-2xl font-bold text-white">
+                    <h3 className="text-2xl font-bold text-soft-gold">
                       {member.name}
                     </h3>
                     <p className="text-light-yellow text-sm italic">
                       {member.role}
                     </p>
-                    <p className="text-gray-300 text-sm mt-2">
+                    <p className="text-gray-400 text-sm mt-2">
                       Lorem ipsum dolor sit amet, consetetur sadipscing elitr,
                       sed diam nonumy.
                     </p>

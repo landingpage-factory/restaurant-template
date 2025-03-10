@@ -119,7 +119,7 @@ export default function Specials() {
             {/* Content-Bereich */}
             <div className="md:col-span-3">
               <div
-                className="bg-gray-900 p-6 flex flex-col md:flex-row items-center gap-6 shadow-lg"
+                className="bg-dark-taupe p-6 flex flex-col md:flex-row items-center gap-6 shadow-lg"
                 data-aos="fade-left"
               >
                 <div className="relative w-full md:w-1/3 h-48 md:h-72">

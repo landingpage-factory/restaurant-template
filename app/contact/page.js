@@ -55,10 +55,10 @@ export default function ContactPage() {
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div id="contact" className="relative z-10 h-[400px] flex items-center justify-center">
           <div className="text-center px-4" data-aos="fade-up" data-aos-delay="200">
-            <h1 className="text-5xl md:text-6xl font-bold text-soft-gold mb-4">
+            <h1 className="text-4xl md:text-6xl font-bold text-soft-gold mb-4">
               Sprechen wir darüber
             </h1>
-            <p className="text-xl text-foreground max-w-2xl mx-auto">
+            <p className="text-lg text-foreground max-w-2xl mx-auto">
               Catering, Reservierungen, Events oder Fragen – wir freuen uns auf
               Ihre Nachricht.
             </p>
