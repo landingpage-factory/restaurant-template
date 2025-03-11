@@ -18,7 +18,7 @@ export default function About() {
     <section id="about">
       {/* Parallax Sektion mit benutzerdefiniertem Stil */}
       <Parallax
-        backgroundImage="/restaurant-template/images/about-bg.jpg"
+        backgroundImage="/images/about-bg.jpg" priority={true}
         className="relative h-[500px] flex justify-center items-center text-center"
       >
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
@@ -79,7 +79,7 @@ export default function About() {
 
       {/* Weitere Parallax Sektion mit einer anderen Bildunterschrift */}
       <Parallax
-        backgroundImage="/restaurant-template/images/chef-cooking.jpg"
+        backgroundImage="/images/chef-cooking.jpg"
         className="relative min-h-[500px] flex justify-center items-center text-center"
       >
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
@@ -151,17 +151,17 @@ export default function About() {
                 {
                   name: "Marco Rossi",
                   role: "Chefkoch",
-                  image: "/restaurant-template/images/team/chef1.jpg",
+                  image: "/images/team/chef1.jpg",
                 },
                 {
                   name: "Luca Moretti",
                   role: "Koch",
-                  image: "/restaurant-template/images/team/chef2.jpg",
+                  image: "/images/team/chef2.jpg",
                 },
                 {
                   name: "Sophie Laurent",
                   role: "Serviceleitung",
-                  image: "/restaurant-template/images/team/service1.jpg",
+                  image: "/images/team/service1.jpg",
                 },
               ].map((member, index) => (
                 <div

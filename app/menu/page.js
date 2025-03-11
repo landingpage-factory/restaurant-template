@@ -15,7 +15,7 @@ export default function Menu() {
       name: "Bruschetta",
       category: "Vorspeisen",
       price: "7,50 €",
-      image: "/restaurant-template/images/menu/bruschetta.jpg",
+      image: "/images/menu/bruschetta.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -25,7 +25,7 @@ export default function Menu() {
       name: "Caprese",
       category: "Vorspeisen",
       price: "8,00 €",
-      image: "/restaurant-template/images/menu/caprese.jpg",
+      image: "/images/menu/caprese.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -35,7 +35,7 @@ export default function Menu() {
       name: "Carpaccio",
       category: "Vorspeisen",
       price: "9,00 €",
-      image: "/restaurant-template/images/menu/carpaccio.jpg",
+      image: "/images/menu/carpaccio.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -45,7 +45,7 @@ export default function Menu() {
       name: "Frittierte Calamari",
       category: "Vorspeisen",
       price: "10,50 €",
-      image: "/restaurant-template/images/menu/calamari.jpg",
+      image: "/images/menu/calamari.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -55,7 +55,7 @@ export default function Menu() {
       name: "Antipasto Platter",
       category: "Vorspeisen",
       price: "12,00 €",
-      image: "/restaurant-template/images/menu/antipasto.jpg",
+      image: "/images/menu/antipasto.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -67,7 +67,7 @@ export default function Menu() {
       name: "Spare Ribs",
       category: "Fleisch und Fisch",
       price: "14,00 €",
-      image: "/restaurant-template/images/menu/spare-ribs.jpg",
+      image: "/images/menu/spare-ribs.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -77,7 +77,7 @@ export default function Menu() {
       name: "Lachsfilet",
       category: "Fleisch und Fisch",
       price: "16,00 €",
-      image: "/restaurant-template/images/menu/lachs.jpg",
+      image: "/images/menu/lachs.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -87,7 +87,7 @@ export default function Menu() {
       name: "Steak",
       category: "Fleisch und Fisch",
       price: "18,50 €",
-      image: "/restaurant-template/images/menu/steak.jpg",
+      image: "/images/menu/steak.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -97,7 +97,7 @@ export default function Menu() {
       name: "Thunfischsteak",
       category: "Fleisch und Fisch",
       price: "19,00 €",
-      image: "/restaurant-template/images/menu/thunfischsteak.jpg",
+      image: "/images/menu/thunfischsteak.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -107,7 +107,7 @@ export default function Menu() {
       name: "Fisch und Chips",
       category: "Fleisch und Fisch",
       price: "13,50 €",
-      image: "/restaurant-template/images/menu/fisch-und-chips.jpg",
+      image: "/images/menu/fisch-und-chips.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -119,7 +119,7 @@ export default function Menu() {
       name: "Tomatensuppe",
       category: "Saucen und Suppen",
       price: "5,00 €",
-      image: "/restaurant-template/images/menu/tomatensuppe.jpg",
+      image: "/images/menu/tomatensuppe.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -129,7 +129,7 @@ export default function Menu() {
       name: "Lauchsuppe",
       category: "Saucen und Suppen",
       price: "7,50 €",
-      image: "/restaurant-template/images/menu/lauchsuppe.jpg",
+      image: "/images/menu/lauchsuppe.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -139,7 +139,7 @@ export default function Menu() {
       name: "Kürbiscremesuppe",
       category: "Saucen und Suppen",
       price: "6,00 €",
-      image: "/restaurant-template/images/menu/kuerbiscremesuppe.jpg",
+      image: "/images/menu/kuerbiscremesuppe.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -149,7 +149,7 @@ export default function Menu() {
       name: "Pilzrahmsuppe",
       category: "Saucen und Suppen",
       price: "6,50 €",
-      image: "/restaurant-template/images/menu/pilzrahmsuppe.jpg",
+      image: "/images/menu/pilzrahmsuppe.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -159,7 +159,7 @@ export default function Menu() {
       name: "Zwiebelsuppe",
       category: "Saucen und Suppen",
       price: "6,50 €",
-      image: "/restaurant-template/images/menu/zwiebelsuppe.jpg",
+      image: "/images/menu/zwiebelsuppe.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -171,7 +171,7 @@ export default function Menu() {
       name: "Caesar Salad",
       category: "Salate",
       price: "8,00 €",
-      image: "/restaurant-template/images/menu/caesar-salad.jpg",
+      image: "/images/menu/caesar-salad.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -181,7 +181,7 @@ export default function Menu() {
       name: "Griechischer Salat",
       category: "Salate",
       price: "7,50 €",
-      image: "/restaurant-template/images/menu/griechischer-salat.jpg",
+      image: "/images/menu/griechischer-salat.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -191,7 +191,7 @@ export default function Menu() {
       name: "Bunter Salat",
       category: "Salate",
       price: "6,00 €",
-      image: "/restaurant-template/images/menu/bunter-salat.jpg",
+      image: "/images/menu/bunter-salat.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -201,7 +201,7 @@ export default function Menu() {
       name: "Feldsalat",
       category: "Salate",
       price: "6,50 €",
-      image: "/restaurant-template/images/menu/feldsalat.jpg",
+      image: "/images/menu/feldsalat.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -211,7 +211,7 @@ export default function Menu() {
       name: "Tomaten Mozzarella Salat",
       category: "Salate",
       price: "7,00 €",
-      image: "/restaurant-template/images/menu/tomaten-mozzarella-salat.jpg",
+      image: "/images/menu/tomaten-mozzarella-salat.jpg",
       ingredients: "Lorem ipsum dolor sit amet, consetetur sadipscing elitr.",
       description:
         "Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt.",
@@ -222,7 +222,7 @@ export default function Menu() {
       name: "Gegrilltes Hähnchen",
       category: "Hähnchen",
       price: "12,50 €",
-      image: "/restaurant-template/images/menu/gegrilltes-haehnchen.jpg",
+      image: "/images/menu/gegrilltes-haehnchen.jpg",
       ingredients: "Gegrilltes Hähnchen mit Kräutern und Gewürzen.",
       description:
         "Zartes Hähnchen, perfekt gewürzt und gegrillt. Ideal für alle, die den authentischen Geschmack lieben.",
@@ -232,7 +232,7 @@ export default function Menu() {
       name: "Hähnchen Schnitzel",
       category: "Hähnchen",
       price: "14,00 €",
-      image: "/restaurant-template/images/menu/haehnchen-schnitzel.jpg",
+      image: "/images/menu/haehnchen-schnitzel.jpg",
       ingredients: "Hähnchenbrust paniert und knusprig gebraten.",
       description:
         "Ein klassisches Hähnchenschnitzel, goldbraun und perfekt serviert mit einer Beilage nach Wahl.",
@@ -242,7 +242,7 @@ export default function Menu() {
       name: "Hähnchen Curry",
       category: "Hähnchen",
       price: "13,50 €",
-      image: "/restaurant-template/images/menu/haehnchen-curry.jpg",
+      image: "/images/menu/haehnchen-curry.jpg",
       ingredients: "Hähnchen in einer cremigen Currysauce.",
       description:
         "Hähnchenstücke in einer aromatischen Currysauce, serviert mit Reis oder Brot.",
@@ -252,7 +252,7 @@ export default function Menu() {
       name: "Hähnchen Caesar Salad",
       category: "Hähnchen",
       price: "11,00 €",
-      image: "/restaurant-template/images/menu/caesar-salad-haehnchen.jpg",
+      image: "/images/menu/caesar-salad-haehnchen.jpg",
       ingredients: "Caesar Salad mit gegrilltem Hähnchen.",
       description:
         "Frische Salatblätter, Croûtons, Parmesan und gegrilltes Hähnchen, serviert mit klassischem Caesar-Dressing.",
@@ -262,7 +262,7 @@ export default function Menu() {
       name: "Hähnchen Fajitas",
       category: "Hähnchen",
       price: "15,00 €",
-      image: "/restaurant-template/images/menu/haehnchen-fajitas.jpg",
+      image: "/images/menu/haehnchen-fajitas.jpg",
       ingredients:
         "Hähnchenstreifen, Paprika und Zwiebeln in einer Fajita-Wrap.",
       description:
@@ -297,7 +297,7 @@ export default function Menu() {
     <section id="menu">
       {/* Parallax-Sektion für die Menü-Überschrift */}
       <Parallax
-        backgroundImage="/restaurant-template/images/menu/menu-bg.jpg"
+        backgroundImage="/images/menu/menu-bg.jpg"
         className="relative h-[400px] flex justify-center items-center text-center"
       >
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">

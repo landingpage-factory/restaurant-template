@@ -1,7 +1,12 @@
-/** @type {import('next').NextConfig} */
+import dotenv from 'dotenv';
+
+dotenv.config();
+
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig = {
-  output: "export",
-  basePath: "/restaurant-template",
+  output: 'export',
+  basePath: isProd ? '/restaurant-template' : '',
   images: { unoptimized: true },
 };
 

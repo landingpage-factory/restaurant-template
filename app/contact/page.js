@@ -51,7 +51,7 @@ export default function ContactPage() {
   return (
     <div className={`min-h-screen ${poppins.variable} font-sans`}>
       {/* Parallax Hero Section */}
-      <Parallax backgroundImage="/restaurant-template/images/bg-contact.jpg">
+      <Parallax backgroundImage="/images/bg-contact.jpg">
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div id="contact" className="relative z-10 h-[400px] flex items-center justify-center">
           <div className="text-center px-4" data-aos="fade-up" data-aos-delay="200">
