@@ -2,6 +2,8 @@
 
 Dies ist ein modernes, anpassbares Template für Restaurant-Websiten, entwickelt mit **Next.js** und **Tailwind CSS**. Es ist perfekt für Restaurants, Cafés oder Catering-Services, die eine schnelle, responsive und optisch ansprechende Website benötigen.
 
+[LIVE DEMO](https://restaurant-template-v2.vercel.app/) 👀
+
 ---
 
 ## Features ✨
