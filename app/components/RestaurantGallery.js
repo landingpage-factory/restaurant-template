@@ -27,14 +27,18 @@ const RestaurantGallery = () => {
   }, []);
 
   const restaurantImages = [
-    { src: "/images/restaurant/restaurant-1.jpg", alt: "Restaurant 1" },
-    { src: "/images/restaurant/restaurant-2.jpg", alt: "Restaurant 2" },
-    { src: "/images/restaurant/restaurant-3.jpg", alt: "Restaurant 3" },
-    { src: "/images/restaurant/restaurant-4.jpg", alt: "Restaurant 4" },
+    { src: "/restaurant-template/images/restaurant/restaurant-1.jpg", alt: "Restaurant 1" },
+    { src: "/restaurant-template/images/restaurant/restaurant-2.jpg", alt: "Restaurant 2" },
+    { src: "/restaurant-template/images/restaurant/restaurant-3.jpg", alt: "Restaurant 3" },
+    { src: "/restaurant-template/images/restaurant/restaurant-4.jpg", alt: "Restaurant 4" },
+    { src: "/restaurant-template/images/restaurant/restaurant-5.jpg", alt: "Restaurant 5" },
+    { src: "/restaurant-template/images/restaurant/restaurant-6.jpg", alt: "Restaurant 6" },
+    { src: "/restaurant-template/images/restaurant/restaurant-7.jpg", alt: "Restaurant 7" },
+    { src: "/restaurant-template/images/restaurant/restaurant-8.jpg", alt: "Restaurant 8" },
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
       {restaurantImages.map((image, index) => (
         <a key={index} href={image.src} className="glightbox group relative block overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300">
           <div className="relative w-full h-64">

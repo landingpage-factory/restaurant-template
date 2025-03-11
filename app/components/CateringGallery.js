@@ -27,14 +27,14 @@ const CateringGallery = () => {
   }, []);
 
   const cateringImages = [
-    { src: "/images/catering/catering-1.jpg", alt: "Catering Event 1" },
-    { src: "/images/catering/catering-2.jpg", alt: "Catering Event 2" },
-    { src: "/images/catering/catering-3.jpg", alt: "Catering Event 3" },
-    { src: "/images/catering/catering-4.jpg", alt: "Catering Event 4" },
-    { src: "/images/catering/catering-5.jpg", alt: "Catering Event 5" },
-    { src: "/images/catering/catering-6.jpg", alt: "Catering Event 6" },
-    { src: "/images/catering/catering-7.jpg", alt: "Catering Event 7" },
-    { src: "/images/catering/catering-8.jpg", alt: "Catering Event 8" },
+    { src: "/restaurant-template/images/catering/catering-1.jpg", alt: "Catering Event 1" },
+    { src: "/restaurant-template/images/catering/catering-2.jpg", alt: "Catering Event 2" },
+    { src: "/restaurant-template/images/catering/catering-3.jpg", alt: "Catering Event 3" },
+    { src: "/restaurant-template/images/catering/catering-4.jpg", alt: "Catering Event 4" },
+    { src: "/restaurant-template/images/catering/catering-5.jpg", alt: "Catering Event 5" },
+    { src: "/restaurant-template/images/catering/catering-6.jpg", alt: "Catering Event 6" },
+    { src: "/restaurant-template/images/catering/catering-7.jpg", alt: "Catering Event 7" },
+    { src: "/restaurant-template/images/catering/catering-8.jpg", alt: "Catering Event 8" },
   ];
 
   return (

@@ -12,7 +12,7 @@ const events = [
   {
     id: 1,
     title: "Geburtstagsfeiern",
-    image: "/images/events/birthday.jpg",
+    image: "/restaurant-template/images/events/birthday.jpg",
     description: "Feiern Sie Ihren besonderen Tag mit uns!",
     details: [
       "Persönliche Menüauswahl",
@@ -23,7 +23,7 @@ const events = [
   {
     id: 2,
     title: "Private Feiern",
-    image: "/images/events/private.jpg",
+    image: "/restaurant-template/images/events/private.jpg",
     description: "Exklusive Veranstaltungen für Ihre Gäste.",
     details: [
       "Individuelle Raumgestaltung",
@@ -34,7 +34,7 @@ const events = [
   {
     id: 3,
     title: "Firmenevents",
-    image: "/images/events/corporate.jpg",
+    image: "/restaurant-template/images/events/corporate.jpg",
     description: "Professionelle Veranstaltungen für Ihr Unternehmen.",
     details: [
       "Moderne Räumlichkeiten",
@@ -57,7 +57,7 @@ export default function Events() {
   return (
     <>
       {/* Parallax-Sektion */}
-      <Parallax backgroundImage="/images/events/events-bg.jpg">
+      <Parallax backgroundImage="/restaurant-template/images/events/events-bg.jpg">
         <div
           id="events"
           className="container mx-auto px-4 py-20 relative z-10 text-center"

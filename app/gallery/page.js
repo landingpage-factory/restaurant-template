@@ -19,7 +19,7 @@ export default function GalleryPage() {
   return (
     <div id="gallery" className="min-h-screen bg-background">
       {/* Parallax Hero Section */}
-      <Parallax backgroundImage="/images/bg-gallery.jpg">
+      <Parallax backgroundImage="/restaurant-template/images/bg-gallery.jpg">
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div className="relative z-10 h-[400px] flex items-center justify-center">
           <div className="text-center" data-aos="fade-up" data-aos-delay="200">

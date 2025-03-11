@@ -19,7 +19,7 @@ export default function CateringPage() {
   return (
     <div className="min-h-screen bg-background">
       {/* Parallax Hero Section */}
-      <Parallax backgroundImage="/images/bg-catering.jpg">
+      <Parallax backgroundImage="/restaurant-template/images/bg-catering.jpg">
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div
           id="catering"
@@ -74,7 +74,7 @@ export default function CateringPage() {
             data-aos-delay="400"
           >
             <Image
-              src="/images/catering/catering-service.jpg"
+              src="/restaurant-template/images/catering/catering-service.jpg"
               alt="Catering Service"
               width={600}
               height={400}

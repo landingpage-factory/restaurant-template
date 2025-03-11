@@ -69,7 +69,7 @@ export default function Reservierung() {
   return (
     <>
       {/* Parallax-Sektion mit Overlay */}
-      <Parallax backgroundImage="/images/reservierung-bg.jpg">
+      <Parallax backgroundImage="/restaurant-template/images/reservierung-bg.jpg">
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div id="reservations"  className="container mx-auto px-4 py-20 relative z-10 text-center">
           <h1
