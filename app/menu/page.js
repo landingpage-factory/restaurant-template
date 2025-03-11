@@ -314,7 +314,7 @@ export default function Menu() {
           <div className="mt-12" data-aos="fade-up" data-aos-delay="300">
             {/* Download-Button hinzugefügt */}
             <a
-              href="/restaurant-template/pdf/speisekarte.pdf"
+              href="/pdf/speisekarte.pdf"
               download
               className="border-2 border-[var(--beige-gray)] text-[var(--foreground)] px-6 py-3 
    font-bold uppercase tracking-wider hover:bg-[var(--beige-gray)]/75 hover:border-[var(--foreground)]

@@ -1,13 +1,9 @@
-import dotenv from 'dotenv';
-
-dotenv.config();
-
-const isProd = process.env.NODE_ENV === 'production';
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
-  basePath: isProd ? '/restaurant-template' : '',
-  images: { unoptimized: true },
+
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "", // Optional, je nach Wunsch des Basis-Pfads
+  
+  images: { unoptimized: true }, // Bilder werden nicht optimiert
 };
 
 export default nextConfig;
