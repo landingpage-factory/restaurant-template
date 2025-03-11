@@ -7,7 +7,7 @@ Dies ist ein modernes, anpassbares Template für Restaurant-Websiten, entwickelt
 ## Features ✨
 
 - **Moderne Technologien**:  
-  - Next.js für schnelles Server-Side Rendering (SSR) und statische Seiten (SSG) 
+  - Next.js für schnelles Server-Side Rendering (SSR) und statische Seiten (SSG).
   - Tailwind CSS für ein flexibles und konsistentes Design.  
 
 - **Responsive Design**:  
