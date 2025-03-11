@@ -13,12 +13,13 @@ export default function About() {
       });
     });
   }, []);
-
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <section id="about">
       {/* Parallax Sektion mit benutzerdefiniertem Stil */}
       <Parallax
-        backgroundImage="/images/about-bg.jpg" priority={true}
+        backgroundImage={`${basePath}/images/about-bg.jpg`}
+        priority="true"
         className="relative h-[500px] flex justify-center items-center text-center"
       >
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
@@ -79,7 +80,7 @@ export default function About() {
 
       {/* Weitere Parallax Sektion mit einer anderen Bildunterschrift */}
       <Parallax
-        backgroundImage="/images/chef-cooking.jpg"
+      backgroundImage={`${basePath}/images/chef-cooking.jpg`}
         className="relative min-h-[500px] flex justify-center items-center text-center"
       >
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
@@ -151,17 +152,17 @@ export default function About() {
                 {
                   name: "Marco Rossi",
                   role: "Chefkoch",
-                  image: "/images/team/chef1.jpg",
+                  image: `${basePath}/images/team/chef1.jpg`,
                 },
                 {
                   name: "Luca Moretti",
                   role: "Koch",
-                  image: "/images/team/chef2.jpg",
+                  image: `${basePath}/images/team/chef2.jpg`,
                 },
                 {
                   name: "Sophie Laurent",
                   role: "Serviceleitung",
-                  image: "/images/team/service1.jpg",
+                  image: `${basePath}/images/team/service1.jpg`,
                 },
               ].map((member, index) => (
                 <div
@@ -175,6 +176,7 @@ export default function About() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    priority={true}
                   />
 
                   {/* Overlay mit Farbverlauf und sichtbarem Text */}

@@ -25,18 +25,18 @@ const CateringGallery = () => {
       }
     };
   }, []);
-
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   const cateringImages = [
-    { src: "/images/catering/catering-1.jpg", alt: "Catering Event 1" },
-    { src: "/images/catering/catering-2.jpg", alt: "Catering Event 2" },
-    { src: "/images/catering/catering-3.jpg", alt: "Catering Event 3" },
-    { src: "/images/catering/catering-4.jpg", alt: "Catering Event 4" },
-    { src: "/images/catering/catering-5.jpg", alt: "Catering Event 5" },
-    { src: "/images/catering/catering-6.jpg", alt: "Catering Event 6" },
-    { src: "/images/catering/catering-7.jpg", alt: "Catering Event 7" },
-    { src: "/images/catering/catering-8.jpg", alt: "Catering Event 8" },
+    { src: `${basePath}/images/catering/catering-1.jpg`, alt: "Catering Event 1" },
+    { src: `${basePath}/images/catering/catering-2.jpg`, alt: "Catering Event 2" },
+    { src: `${basePath}/images/catering/catering-3.jpg`, alt: "Catering Event 3" },
+    { src: `${basePath}/images/catering/catering-4.jpg`, alt: "Catering Event 4" },
+    { src: `${basePath}/images/catering/catering-5.jpg`, alt: "Catering Event 5" },
+    { src: `${basePath}/images/catering/catering-6.jpg`, alt: "Catering Event 6" },
+    { src: `${basePath}/images/catering/catering-7.jpg`, alt: "Catering Event 7" },
+    { src: `${basePath}/images/catering/catering-8.jpg`, alt: "Catering Event 8" },
   ];
-
+  
   return (
     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-2">
       {cateringImages.map((image, index) => (
@@ -50,6 +50,7 @@ const CateringGallery = () => {
             <Image
               src={image.src}
               alt={image.alt}
+              property="true"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
               className="object-cover transform transition-transform duration-300 group-hover:scale-105"

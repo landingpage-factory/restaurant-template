@@ -1,9 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || "", // Optional, je nach Wunsch des Basis-Pfads
-  
-  images: { unoptimized: true }, // Bilder werden nicht optimiert
+  output: 'export',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '', // basePath aus der Umgebungsvariable
+  images: { unoptimized: true },
 };
 
 export default nextConfig;

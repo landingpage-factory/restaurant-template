@@ -8,11 +8,12 @@ import "swiper/css/pagination";
 import Image from "next/image";
 import Parallax from "../components/Parallax";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''; 
 const events = [
   {
     id: 1,
     title: "Geburtstagsfeiern",
-    image: "/images/events/birthday.jpg",
+    image: `${basePath}/images/events/birthday.jpg`, // Dynamischer Bildpfad
     description: "Feiern Sie Ihren besonderen Tag mit uns!",
     details: [
       "Persönliche Menüauswahl",
@@ -23,7 +24,7 @@ const events = [
   {
     id: 2,
     title: "Private Feiern",
-    image: "/images/events/private.jpg",
+    image: `${basePath}/images/events/private.jpg`, // Dynamischer Bildpfad
     description: "Exklusive Veranstaltungen für Ihre Gäste.",
     details: [
       "Individuelle Raumgestaltung",
@@ -34,7 +35,7 @@ const events = [
   {
     id: 3,
     title: "Firmenevents",
-    image: "/images/events/corporate.jpg",
+    image: `${basePath}/images/events/corporate.jpg`, // Dynamischer Bildpfad
     description: "Professionelle Veranstaltungen für Ihr Unternehmen.",
     details: [
       "Moderne Räumlichkeiten",
@@ -57,7 +58,7 @@ export default function Events() {
   return (
     <>
       {/* Parallax-Sektion */}
-      <Parallax backgroundImage="/images/events/events-bg.jpg">
+      <Parallax backgroundImage={`${basePath}/images/events/events-bg.jpg`}>
         <div
           id="events"
           className="container mx-auto px-4 py-20 relative z-10 text-center"
@@ -127,6 +128,7 @@ export default function Events() {
                         src={event.image}
                         alt={event.title}
                         fill
+                        priority="true"
                         className="object-cover"
                         sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                       />

@@ -4,48 +4,50 @@ import { useState, useEffect } from "react";
 import Image from "next/image";
 import Parallax from "../components/Parallax";
 
+
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const specials = [
   {
     id: 1,
     name: "Trüffel-Ravioli",
     description:
       "Hausgemachte Ravioli mit feiner Trüffel-Ricotta-Füllung, serviert in einer Butter-Salbei-Sauce.",
-    image: "/images/specials/truffel-ravioli.jpg",
+    image: `${basePath}/images/specials/truffel-ravioli.jpg`,
   },
   {
     id: 2,
     name: "Gegrillter Lachs",
     description:
       "Frischer Lachsfilet auf Zitronen-Dill-Sauce mit saisonalem Gemüse und Kartoffelpüree.",
-    image: "/images/specials/grilled-salmon.jpg",
+    image: `${basePath}/images/specials/grilled-salmon.jpg`,
   },
   {
     id: 3,
     name: "Tomahawk-Steak",
     description:
       "Dry-aged Tomahawk-Steak mit Kräuterbutter, dazu Rosmarinkartoffeln und Grillgemüse.",
-    image: "/images/specials/tomahawk-steak.jpg",
+    image: `${basePath}/images/specials/tomahawk-steak.jpg`,
   },
   {
     id: 4,
     name: "Vegane Buddha Bowl",
-    name: "Buddha Bowl",
     description:
       "Bunte Bowl mit Hähnchenbrust, Avocado, Edamame, Süßkartoffeln und hausgemachtem Tahini-Dressing.",
-    image: "/images/specials/buddha-bowl.jpg",
+    image: `${basePath}/images/specials/buddha-bowl.jpg`,
   },
   {
     id: 5,
     name: "Schokoladenfondant",
     description:
       "Warmer Schokoladenkuchen mit flüssigem Kern, serviert mit hausgemachtem Vanilleeis.",
-    image: "/images/specials/chocolate-fondant.jpg",
+    image: `${basePath}/images/specials/chocolate-fondant.jpg`,
   },
 ];
 
+
 export default function Specials() {
   const [activeSpecial, setActiveSpecial] = useState(specials[0]);
-
+  
   useEffect(() => {
     import("aos").then((AOS) => {
       AOS.init({
@@ -54,11 +56,11 @@ export default function Specials() {
       });
     });
   }, []);
-
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''; 
   return (
     <>
       {/* Parallax-Sektion */}
-      <Parallax backgroundImage="/images/specials/specials-bg.jpg">
+      <Parallax backgroundImage={`${basePath}images/specials/specials-bg.jpg`}>
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
           <h1
             className="text-4xl sm:text-5xl font-bold text-soft-gold mb-6"
@@ -126,6 +128,7 @@ export default function Specials() {
                   <Image
                     src={activeSpecial.image}
                     alt={activeSpecial.name}
+                    priority={true}
                     fill
               sizes="(max-width: 700px) 100vw, (max-width: 768px) 50vw, 33vw"
               className="object-cover transform transition-transform duration-300 group-hover:scale-105"

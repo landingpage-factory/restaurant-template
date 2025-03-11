@@ -65,11 +65,11 @@ export default function Reservierung() {
       personen: 1,
     });
   };
-
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''; 
   return (
     <>
       {/* Parallax-Sektion mit Overlay */}
-      <Parallax backgroundImage="/images/reservierung-bg.jpg">
+      <Parallax backgroundImage={`${basePath}/images/reservierung-bg.jpg`}>
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div id="reservations"  className="container mx-auto px-4 py-20 relative z-10 text-center">
           <h1

@@ -2,7 +2,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import { Poppins } from "next/font/google";
-import { FaMapMarkerAlt, FaClock, FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaClock, FaPhone, FaEnvelope } from "react-icons/fa";
 import Parallax from "../components/Parallax";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -47,14 +47,21 @@ export default function ContactPage() {
       setLoading(false);
     }
   };
-
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className={`min-h-screen ${poppins.variable} font-sans`}>
       {/* Parallax Hero Section */}
-      <Parallax backgroundImage="/images/bg-contact.jpg">
+      <Parallax backgroundImage={`${basePath}/images/bg-contact.jpg`}>
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
-        <div id="contact" className="relative z-10 h-[400px] flex items-center justify-center">
-          <div className="text-center px-4" data-aos="fade-up" data-aos-delay="200">
+        <div
+          id="contact"
+          className="relative z-10 h-[400px] flex items-center justify-center"
+        >
+          <div
+            className="text-center px-4"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <h1 className="text-4xl md:text-6xl font-bold text-soft-gold mb-4">
               Sprechen wir darüber
             </h1>
@@ -127,17 +134,11 @@ export default function ContactPage() {
               </div>
 
               {error && (
-                <div
-                  className="mt-4 p-3 text-soft-gold "
-                >
-                  Error: {error}
-                </div>
+                <div className="mt-4 p-3 text-soft-gold ">Error: {error}</div>
               )}
 
               {success && (
-                <div
-                  className="mt-4 p-3 text-soft-gold"
-                >
+                <div className="mt-4 p-3 text-soft-gold">
                   Ihre Nachricht wurde erfolgreich gesendet!
                 </div>
               )}
@@ -164,104 +165,114 @@ export default function ContactPage() {
         </div>
 
         {/* Contact Info */}
-<div
-  className="grid md:grid-cols-4 gap-6 mt-20 text-left" // Text jetzt linksbündig
-  data-aos="fade-up"
-  data-aos-delay="200"
->
-  {/* Besuchen Sie uns */}
-  <div
-    className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
-    data-aos="fade-up"
-    data-aos-delay="300"
-  >
-    <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
-      <FaMapMarkerAlt className="mr-2" /> Besuchen Sie uns
-    </h3>
-    <div className="space-y-3 text-beige-gray">
-      <p className="text-lg">
-        <span className="font-medium text-soft-gold">Adresse:</span>
-        <br />
-        Musterstraße 123
-        <br />
-        12345 Berlin
-      </p>
-    </div>
-  </div>
+        <div
+          className="grid md:grid-cols-4 gap-6 mt-20 text-left" // Text jetzt linksbündig
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          {/* Besuchen Sie uns */}
+          <div
+            className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
+              <FaMapMarkerAlt className="mr-2" /> Besuchen Sie uns
+            </h3>
+            <div className="space-y-3 text-beige-gray">
+              <p className="text-lg">
+                <span className="font-medium text-soft-gold">Adresse:</span>
+                <br />
+                Musterstraße 123
+                <br />
+                12345 Berlin
+              </p>
+            </div>
+          </div>
 
-  {/* Öffnungszeiten */}
-  <div
-    className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
-    data-aos="fade-up"
-    data-aos-delay="400"
-  >
-    <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
-      <FaClock className="mr-2" /> Öffnungszeiten
-    </h3>
-    <div className="space-y-3 text-beige-gray">
-      <p className="text-lg">
-        <span className="font-medium text-soft-gold">Täglich geöffnet:</span>
-        <br />
-        Montag - Sonntag
-        <br />
-        12:00 - 21:00 Uhr
-      </p>
-      <p className="text-lg">
-        <span className="font-medium text-soft-gold">Küchenzeiten:</span>
-        <br />
-        Letzte Bestellung: 20:30 Uhr
-      </p>
-    </div>
-  </div>
+          {/* Öffnungszeiten */}
+          <div
+            className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
+              <FaClock className="mr-2" /> Öffnungszeiten
+            </h3>
+            <div className="space-y-3 text-beige-gray">
+              <p className="text-lg">
+                <span className="font-medium text-soft-gold">
+                  Täglich geöffnet:
+                </span>
+                <br />
+                Montag - Sonntag
+                <br />
+                12:00 - 21:00 Uhr
+              </p>
+              <p className="text-lg">
+                <span className="font-medium text-soft-gold">
+                  Küchenzeiten:
+                </span>
+                <br />
+                Letzte Bestellung: 20:30 Uhr
+              </p>
+            </div>
+          </div>
 
-  {/* Rufen Sie uns an */}
-  <div
-    className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
-    data-aos="fade-up"
-    data-aos-delay="500"
-  >
-    <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
-      <FaPhone className="mr-2" /> Rufen Sie uns an
-    </h3>
-    <div className="space-y-3 text-beige-gray">
-      <p className="text-lg">
-        <span className="font-medium text-soft-gold">Reservierung:</span>
-        <br />
-        +49 123 456789
-      </p>
-      <p className="text-lg">
-        <span className="font-medium text-soft-gold">Erreichbarkeit:</span>
-        <br />
-        Mo - So: 09:00 - 20:00 Uhr
-      </p>
-    </div>
-  </div>
+          {/* Rufen Sie uns an */}
+          <div
+            className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
+              <FaPhone className="mr-2" /> Rufen Sie uns an
+            </h3>
+            <div className="space-y-3 text-beige-gray">
+              <p className="text-lg">
+                <span className="font-medium text-soft-gold">
+                  Reservierung:
+                </span>
+                <br />
+                +49 123 456789
+              </p>
+              <p className="text-lg">
+                <span className="font-medium text-soft-gold">
+                  Erreichbarkeit:
+                </span>
+                <br />
+                Mo - So: 09:00 - 20:00 Uhr
+              </p>
+            </div>
+          </div>
 
-  {/* Schreiben Sie uns */}
-  <div
-    className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
-    data-aos="fade-up"
-    data-aos-delay="600"
-  >
-    <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
-      <FaEnvelope className="mr-2" /> Schreiben Sie uns
-    </h3>
-    <div className="space-y-3 text-beige-gray">
-      <div>
-        <p className="font-medium text-soft-gold">Allgemeine Anfragen:</p>
-        <p className="text-lg">info@deinrestaurant.de</p>
-      </div>
-      <div>
-        <p className="font-medium text-soft-gold">Reservierungen:</p>
-        <p className="text-lg">reservierung@deinrestaurant.de</p>
-      </div>
-      <div>
-        <p className="font-medium text-soft-gold">Catering & Events:</p>
-        <p className="text-lg">events@deinrestaurant.de</p>
-      </div>
-    </div>
-  </div>
-</div>
+          {/* Schreiben Sie uns */}
+          <div
+            className="p-6 bg-dark-taupe hover:bg-beige-gray/40 transition-all duration-300 group"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <h3 className="text-2xl text-soft-gold mb-4 font-semibold flex items-center">
+              <FaEnvelope className="mr-2" /> Schreiben Sie uns
+            </h3>
+            <div className="space-y-3 text-beige-gray">
+              <div>
+                <p className="font-medium text-soft-gold">
+                  Allgemeine Anfragen:
+                </p>
+                <p className="text-lg">info@deinrestaurant.de</p>
+              </div>
+              <div>
+                <p className="font-medium text-soft-gold">Reservierungen:</p>
+                <p className="text-lg">reservierung@deinrestaurant.de</p>
+              </div>
+              <div>
+                <p className="font-medium text-soft-gold">Catering & Events:</p>
+                <p className="text-lg">events@deinrestaurant.de</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );

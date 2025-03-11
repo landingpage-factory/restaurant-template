@@ -15,11 +15,14 @@ export default function CateringPage() {
       once: true,
     });
   }, []);
-
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <div className="min-h-screen bg-background">
       {/* Parallax Hero Section */}
-      <Parallax backgroundImage="/images/bg-catering.jpg">
+      <Parallax
+        backgroundImage={`${basePath}/images/bg-catering.jpg`}
+        priority={true}
+      >
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div
           id="catering"
@@ -55,8 +58,8 @@ export default function CateringPage() {
                 <PiFlowerLotusThin className="mr-2" /> Individuelle Menüplanung
               </li>
               <li className="flex items-center">
-                <PiFlowerLotusThin className="mr-2" /> Frische Zutaten aus der Region
-                
+                <PiFlowerLotusThin className="mr-2" /> Frische Zutaten aus der
+                Region
               </li>
               <li className="flex items-center">
                 <PiFlowerLotusThin className="mr-2" /> Professioneller Service
@@ -74,10 +77,11 @@ export default function CateringPage() {
             data-aos-delay="400"
           >
             <Image
-              src="/images/catering/catering-service.jpg"
+              src={`${basePath}/images/catering/catering-service.jpg`}
               alt="Catering Service"
               width={600}
               height={400}
+              priority={true}
               className="w-full h-80 object-cover"
             />
           </div>

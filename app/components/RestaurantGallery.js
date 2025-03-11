@@ -25,16 +25,16 @@ const RestaurantGallery = () => {
       }
     };
   }, []);
-
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   const restaurantImages = [
-    { src: "/images/restaurant/restaurant-1.jpg", alt: "Restaurant 1" },
-    { src: "/images/restaurant/restaurant-2.jpg", alt: "Restaurant 2" },
-    { src: "/images/restaurant/restaurant-3.jpg", alt: "Restaurant 3" },
-    { src: "/images/restaurant/restaurant-4.jpg", alt: "Restaurant 4" },
-    { src: "/images/restaurant/restaurant-5.jpg", alt: "Restaurant 5" },
-    { src: "/images/restaurant/restaurant-6.jpg", alt: "Restaurant 6" },
-    { src: "/images/restaurant/restaurant-7.jpg", alt: "Restaurant 7" },
-    { src: "/images/restaurant/restaurant-8.jpg", alt: "Restaurant 8" },
+    { src: `${basePath}/images/restaurant/restaurant-1.jpg`, alt: "Restaurant 1" },
+    { src: `${basePath}/images/restaurant/restaurant-2.jpg`, alt: "Restaurant 2" },
+    { src: `${basePath}/images/restaurant/restaurant-3.jpg`, alt: "Restaurant 3" },
+    { src: `${basePath}/images/restaurant/restaurant-4.jpg`, alt: "Restaurant 4" },
+    { src: `${basePath}/images/restaurant/restaurant-5.jpg`, alt: "Restaurant 5" },
+    { src: `${basePath}/images/restaurant/restaurant-6.jpg`, alt: "Restaurant 6" },
+    { src: `${basePath}/images/restaurant/restaurant-7.jpg`, alt: "Restaurant 7" },
+    { src: `${basePath}/images/restaurant/restaurant-8.jpg`, alt: "Restaurant 8" },
   ];
 
   return (
@@ -45,6 +45,7 @@ const RestaurantGallery = () => {
             <Image
               src={image.src}
               alt={image.alt}
+              property="true"
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
               className="object-cover transform transition-transform duration-300 group-hover:scale-105"

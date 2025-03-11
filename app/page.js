@@ -20,6 +20,7 @@ export default function Home() {
     });
   }, []);
 
+  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <div className="overflow-hidden">
     <section
@@ -76,7 +77,7 @@ export default function Home() {
       {/* Hintergrundbild mit Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-        style={{ backgroundImage: "url(/images/bg-home.jpg)",
+          style={{ backgroundImage: `url(${basePath}/images/bg-home.jpg)`,
           transform: "scaleX(-1)" 
          }}
         

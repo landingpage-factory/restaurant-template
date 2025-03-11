@@ -128,7 +128,9 @@ export default function Footer() {
                 Abonnieren Sie unseren Newsletter für aktuelle Angebote und
                 Neuigkeiten.
               </p>
+              <div>
               <NewsletterForm />
+              </div>
             </div>
           </div>
         </div>
