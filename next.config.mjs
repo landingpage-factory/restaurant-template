@@ -2,8 +2,6 @@
 const nextConfig = {
   output: "export",
   basePath: "/restaurant-template",
-  assetPrefix: "/restaurant-template",
-  trailingSlash: true,
   images: { unoptimized: true },
 };
 
