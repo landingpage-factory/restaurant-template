@@ -70,7 +70,7 @@ Für kommerzielle Nutzung kontaktiere bitte den Autor.
 - **[Next.js](https://nextjs.org/)** – React-Framework für SSR und SSG.  
 - **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS-Framework.  
 - **[AOS](https://michalsnik.github.io/aos/)** – Animationsbibliothek für Scroll-Effekte.  
-- **[Fancybox](https://www.npmjs.com/package/fancybox)** –  Flexible und anpassbare Galerie für Bilder und Medien.
+- **[Fancybox](https://fancyapps.com/fancybox/)** –  Flexible und anpassbare Galerie für Bilder und Medien.
 - **[Glidejs](https://glidejs.com/docs/setup)** - Moderne und anpassbare Touch-Slider-Bibliothek.
 
 ---
