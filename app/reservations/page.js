@@ -1,6 +1,6 @@
 // app/reservierung/page.js
 'use client';
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Parallax from '../components/Parallax';
 
 export default function Reservierung() {
@@ -14,16 +14,6 @@ export default function Reservierung() {
   });
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
-
-  // AOS initialisieren
-  useEffect(() => {
-    import('aos').then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
 
   const handleChange = (e) => {
     const { name, value } = e.target;

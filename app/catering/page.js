@@ -1,20 +1,10 @@
 // app/catering/page.js
-"use client";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import Image from "next/image";
 import Parallax from "../components/Parallax";
 import { PiFlowerLotusThin } from "react-icons/pi";
 import { Link as ScrollLink } from "react-scroll";
 
 export default function CateringPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  }, []);
 
   return (
     <div className="min-h-screen bg-background">

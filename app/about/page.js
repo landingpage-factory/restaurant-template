@@ -1,18 +1,10 @@
-"use client";
+// app/about/page.js
 import Image from "next/image";
-import { useEffect } from "react";
 import { Link as ScrollLink } from "react-scroll";
 import Parallax from "../components/Parallax";
 
 export default function About() {
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
+  
   return (
     <section id="about">
       {/* Parallax Sektion mit benutzerdefiniertem Stil */}

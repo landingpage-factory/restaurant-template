@@ -48,7 +48,7 @@ export default function SwiperComponent() {
     const glide = new Glide(glideRef.current, {
       type: 'carousel',
       perView: 1,
-      autoplay: 4000,
+      autoplay: 3000,
       hoverpause: true,
       focusAt: 'center',
       gap: 30,

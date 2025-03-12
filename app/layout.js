@@ -4,6 +4,7 @@ import 'aos/dist/aos.css';
 import '@glidejs/glide/dist/css/glide.core.min.css';
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
+import AOSProvider from "./components/AOSProvider";
 
 // Definiere Poppins als benutzerdefinierte Schriftart
 const poppins = Poppins({
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="de">
       <body className={poppins.className}>
+        <AOSProvider/>
         <Navbar/>
         {children}
         <Footer/>

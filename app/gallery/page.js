@@ -1,20 +1,11 @@
 // app/gallery/page.js
-"use client";
-import { useEffect } from "react";
-import AOS from "aos";
-import "aos/dist/aos.css";
 import { Link as ScrollLink } from "react-scroll";
 import Parallax from "../components/Parallax";
 import CateringGallery from "../components/CateringGallery";
 import RestaurantGallery from "../components/RestaurantGallery";
 
 export default function GalleryPage() {
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  }, []);
+
   return (
     <div id="gallery" className="min-h-screen bg-background">
       {/* Parallax Hero Section */}

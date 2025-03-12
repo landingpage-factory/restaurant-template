@@ -1,5 +1,5 @@
-"use client";
-import { useEffect } from "react";
+// app/page.js
+'use client'
 import { Link as ScrollLink } from "react-scroll";
 import PageTopButton from './components/PageTopButton';
 import About from "./about/page";
@@ -11,16 +11,7 @@ import CateringPage from "./catering/page";
 import GalleryPage from "./gallery/page";
 
 export default function Home() {
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1200,
-        once: true,
-      });
-    });
-  }, []);
-
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
+  
   return (
     <div className="overflow-hidden">
     <section

@@ -1,11 +1,9 @@
 // app/contact/page.js
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { Poppins } from "next/font/google";
 import { FaMapMarkerAlt, FaClock, FaPhone, FaEnvelope } from "react-icons/fa";
 import Parallax from "../components/Parallax";
-import AOS from "aos";
-import "aos/dist/aos.css";
 
 const poppins = Poppins({
   weight: ["400", "600"],
@@ -17,13 +15,6 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState(null);
-
-  useEffect(() => {
-    AOS.init({
-      duration: 800,
-      once: true,
-    });
-  }, []);
 
   const handleSubmit = async (e) => {
     e.preventDefault();

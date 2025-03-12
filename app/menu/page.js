@@ -1,5 +1,6 @@
+// app/menu/page.js
 "use client";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Image from "next/image";
 import Parallax from "../components/Parallax";
 import { FaFileDownload } from "react-icons/fa";
@@ -283,15 +284,6 @@ export default function Menu() {
     activeCategory === "alle"
       ? menuItems
       : menuItems.filter((item) => item.category === activeCategory);
-
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
 
   return (
     <section id="menu">

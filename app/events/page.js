@@ -1,6 +1,4 @@
 // app/components/Events.js
-"use client";
-import { useEffect } from "react";
 import Parallax from "../components/Parallax";
 import dynamic from "next/dynamic";
 
@@ -9,14 +7,6 @@ const SwiperComponent = dynamic(() => import("../components/SwiperComponent"), {
 });
 
 export default function Events() {
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: true,
-      });
-    });
-  }, []);
 
   return (
     <>
@@ -60,8 +50,8 @@ export default function Events() {
           {/* Glide mit Autoplay */}
           <div
             className="container mx-auto max-w-6xl overflow-hidden"
-            // data-aos="fade-up"
-            // data-aos-delay="100"
+            data-aos="fade-up"
+            data-aos-delay="100"
           >
             <div>
               {/* Glide Lazy-Loaded */}
