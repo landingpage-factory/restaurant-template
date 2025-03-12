@@ -1,4 +1,5 @@
 // app/components/Events.js
+'use client';
 import Parallax from "../components/Parallax";
 import dynamic from "next/dynamic";
 
