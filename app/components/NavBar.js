@@ -134,7 +134,7 @@ export default function Navbar() {
 
         {/* Hamburger Menü für mobile Ansicht */}
         <div className="lg:hidden">
-          <button onClick={toggleMenu} className="text-2xl">
+          <button onClick={toggleMenu} className="text-2xl" aria-label="Menü öffnen">
             {isMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
         </div>

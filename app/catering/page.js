@@ -15,12 +15,12 @@ export default function CateringPage() {
       once: true,
     });
   }, []);
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
   return (
     <div className="min-h-screen bg-background">
       {/* Parallax Hero Section */}
       <Parallax
-        backgroundImage={`${basePath}/images/bg-catering.jpg`}
+        backgroundImage="/images/bg-catering.jpg"
         priority={true}
       >
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
@@ -77,7 +77,7 @@ export default function CateringPage() {
             data-aos-delay="400"
           >
             <Image
-              src={`${basePath}/images/catering/catering-service.jpg`}
+              src="/images/catering/catering-service.jpg"
               alt="Catering Service"
               width={600}
               height={400}

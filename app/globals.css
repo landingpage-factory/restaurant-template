@@ -176,31 +176,48 @@ body {
   background-attachment: fixed;
 }
 
-/* Swiper CSS */
-.events-slider .swiper-pagination-bullet {
-  background-color: #c0a062; /* Goldfarbe */
-  opacity: 0.5; /* Halbtransparent */
+
+/* Glide CSS */
+/* Active Bullet Style */
+.glide__bullet--active {
+  background-color: #d4b46d !important; 
+  opacity: 0.7; 
+}
+
+/* Standard Bullet Style */
+.glide__bullet {
+  background-color: #948b72;
   width: 12px;
   height: 12px;
-  margin: 0 8px !important;
-  margin-top: 16px;
+  border-radius: 50%;
+  margin: 0 6px; /* Abstand zwischen den Dots */
+  transition: background-color 0.3s ease;
 }
 
-.events-slider .swiper-pagination-bullet-active {
-  background-color: #c0a062; /* Goldfarbe */
-  opacity: 1; /* Volle Deckkraft */
-}
-
-/* Common Styles */
-.swiper-pagination-fraction,
-.swiper-pagination-custom,
-.swiper-horizontal > .swiper-pagination-bullets,
-.swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: var(--swiper-pagination-bottom, 8px);
-  top: var(--swiper-pagination-top, auto);
+/* Pagination Container (Positionierung der Dots) */
+.glide__bullets {
+  position: absolute;
   left: 0;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+  list-style: none;
+  margin: 0;
+  z-index: 10;
 }
+
+/* Hover Effekt Pointer-Cursor */
+.glide__bullet:hover {
+  cursor: pointer !important;
+  background-color: #c0a062;
+}
+
+/* Horizontal ausgerichtete Bullets */
+.glide__bullets--horizontal {
+  bottom: -6.3px;
+}
+
 
 
 /* PageTopButton */

@@ -15,7 +15,7 @@ export default function Home() {
     import("aos").then((AOS) => {
       AOS.init({
         duration: 1200,
-        once: false,
+        once: true,
       });
     });
   }, []);
@@ -77,8 +77,9 @@ export default function Home() {
       {/* Hintergrundbild mit Overlay */}
       <div
         className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${basePath}/images/bg-home.jpg)`,
-          transform: "scaleX(-1)" 
+        style={{
+          backgroundImage: "url('/images/bg-home.jpg')",  // Richtige Schließung der Anführungszeichen
+          transform: "scaleX(-1)",
          }}
         
         data-aos="fade"

@@ -15,11 +15,10 @@ export default function GalleryPage() {
       once: true,
     });
   }, []);
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
   return (
     <div id="gallery" className="min-h-screen bg-background">
       {/* Parallax Hero Section */}
-      <Parallax backgroundImage={`${basePath}/images/bg-gallery.jpg`} priority="true">
+      <Parallax backgroundImage="/images/bg-gallery.jpg" priority="true">
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div className="relative z-10 h-[400px] flex items-center justify-center">
           <div className="text-center" data-aos="fade-up" data-aos-delay="200">

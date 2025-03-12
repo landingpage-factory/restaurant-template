@@ -5,42 +5,41 @@ import Image from "next/image";
 import Parallax from "../components/Parallax";
 
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH || '';
 const specials = [
   {
     id: 1,
     name: "Trüffel-Ravioli",
     description:
       "Hausgemachte Ravioli mit feiner Trüffel-Ricotta-Füllung, serviert in einer Butter-Salbei-Sauce.",
-    image: `${basePath}/images/specials/truffel-ravioli.jpg`,
+    image: "/images/specials/truffel-ravioli.jpg",
   },
   {
     id: 2,
     name: "Gegrillter Lachs",
     description:
       "Frischer Lachsfilet auf Zitronen-Dill-Sauce mit saisonalem Gemüse und Kartoffelpüree.",
-    image: `${basePath}/images/specials/grilled-salmon.jpg`,
+    image: "/images/specials/grilled-salmon.jpg",
   },
   {
     id: 3,
     name: "Tomahawk-Steak",
     description:
       "Dry-aged Tomahawk-Steak mit Kräuterbutter, dazu Rosmarinkartoffeln und Grillgemüse.",
-    image: `${basePath}/images/specials/tomahawk-steak.jpg`,
+    image: "/images/specials/tomahawk-steak.jpg",
   },
   {
     id: 4,
     name: "Vegane Buddha Bowl",
     description:
       "Bunte Bowl mit Hähnchenbrust, Avocado, Edamame, Süßkartoffeln und hausgemachtem Tahini-Dressing.",
-    image: `${basePath}/images/specials/buddha-bowl.jpg`,
+    image: "/images/specials/buddha-bowl.jpg",
   },
   {
     id: 5,
     name: "Schokoladenfondant",
     description:
       "Warmer Schokoladenkuchen mit flüssigem Kern, serviert mit hausgemachtem Vanilleeis.",
-    image: `${basePath}/images/specials/chocolate-fondant.jpg`,
+    image: "/images/specials/chocolate-fondant.jpg",
   },
 ];
 
@@ -56,11 +55,11 @@ export default function Specials() {
       });
     });
   }, []);
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || ''; 
+  
   return (
     <>
       {/* Parallax-Sektion */}
-      <Parallax backgroundImage={`${basePath}images/specials/specials-bg.jpg`}>
+      <Parallax backgroundImage="images/specials/specials-bg.jpg">
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
           <h1
             className="text-4xl sm:text-5xl font-bold text-soft-gold mb-6"

@@ -31,27 +31,30 @@ export default function ContactPage() {
     setError(null);
 
     try {
+      // Simuliere eine erfolgreiche Nachrichtensendung
       await new Promise((resolve, reject) => {
         setTimeout(() => {
-          Math.random() > 0.5
-            ? resolve()
-            : reject(new Error("Nachricht konnte nicht gesendet werden"));
-        }, 2000);
+          // Hier wird mit einer 50%-Wahrscheinlichkeit entweder erfolgreich oder mit Fehler abgeschlossen
+          Math.random() > 0.5 ? resolve() : reject(new Error("Nachricht konnte nicht gesendet werden"));
+        }, 2000); // Warte 2 Sekunden, um das Senden zu simulieren
       });
 
+      // Wenn erfolgreich
       setSuccess(true);
-      e.target.reset();
+      e.target.reset(); // Setze das Formular nach dem erfolgreichen Senden zurück
     } catch (err) {
+      // Wenn ein Fehler auftritt
       setError(err.message);
     } finally {
+      // Ladezustand beenden
       setLoading(false);
     }
   };
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+  
   return (
     <div className={`min-h-screen ${poppins.variable} font-sans`}>
       {/* Parallax Hero Section */}
-      <Parallax backgroundImage={`${basePath}/images/bg-contact.jpg`}>
+      <Parallax backgroundImage="/images/bg-contact.jpg">
         <div className="absolute inset-0 bg-black/50"></div> {/* Overlay */}
         <div
           id="contact"
@@ -116,13 +119,12 @@ export default function ContactPage() {
                 />
               </div>
 
-              <div data-aos="fade-up" data-aos-delay="400">
+              <div>
                 <button
                   type="submit"
                   disabled={loading}
                   className={`w-full py-3 px-6 text-background font-semibold transition-all
-                    ${
-                      loading
+                    ${loading
                         ? "bg-beige-gray cursor-wait"
                         : "bg-soft-gold hover:bg-beige-gray hover:cursor-pointer hover:text-gray-900"
                     }

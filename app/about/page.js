@@ -9,16 +9,15 @@ export default function About() {
     import("aos").then((AOS) => {
       AOS.init({
         duration: 1000,
-        once: false,
+        once: true,
       });
     });
   }, []);
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
   return (
     <section id="about">
       {/* Parallax Sektion mit benutzerdefiniertem Stil */}
       <Parallax
-        backgroundImage={`${basePath}/images/about-bg.jpg`}
+        backgroundImage="/images/about-bg.jpg"
         priority="true"
         className="relative h-[500px] flex justify-center items-center text-center"
       >
@@ -80,7 +79,7 @@ export default function About() {
 
       {/* Weitere Parallax Sektion mit einer anderen Bildunterschrift */}
       <Parallax
-      backgroundImage={`${basePath}/images/chef-cooking.jpg`}
+        backgroundImage="/images/chef-cooking.jpg"
         className="relative min-h-[500px] flex justify-center items-center text-center"
       >
         <div className="container mx-auto px-4 py-20 relative z-10 text-center">
@@ -152,17 +151,17 @@ export default function About() {
                 {
                   name: "Marco Rossi",
                   role: "Chefkoch",
-                  image: `${basePath}/images/team/chef1.jpg`,
+                  image: "/images/team/chef1.jpg",
                 },
                 {
                   name: "Luca Moretti",
                   role: "Koch",
-                  image: `${basePath}/images/team/chef2.jpg`,
+                  image: "/images/team/chef2.jpg",
                 },
                 {
                   name: "Sophie Laurent",
                   role: "Serviceleitung",
-                  image: `${basePath}/images/team/service1.jpg`,
+                  image: "/images/team/service1.jpg",
                 },
               ].map((member, index) => (
                 <div
@@ -176,7 +175,7 @@ export default function About() {
                     fill
                     className="object-cover"
                     sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    priority={true}
+                    priority="true"
                   />
 
                   {/* Overlay mit Farbverlauf und sichtbarem Text */}

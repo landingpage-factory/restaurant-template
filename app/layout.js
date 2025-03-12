@@ -1,6 +1,7 @@
 import { Poppins  } from "next/font/google";
 import "./globals.css";
 import 'aos/dist/aos.css';
+import '@glidejs/glide/dist/css/glide.core.min.css';
 import Navbar from "./components/NavBar";
 import Footer from "./components/Footer";
 
