@@ -16,7 +16,7 @@ Dies ist ein modernes, anpassbares Template für Restaurant-Websiten, entwickelt
   - Optimiert für alle Geräte (Desktop, Tablet, Mobile).  
 
 - **Interaktive Elemente**:  
-  - Parallax-Effekte, AOS-Animationen, Swiper und Glightbox für Bildergalerien.  
+  - Parallax-Effekte, AOS-Animationen, Glidejs und Fancybox für Bildergalerien.  
 
 - **Einfache Anpassung**:  
   - Klare Struktur und gut dokumentierter Code.  
@@ -70,8 +70,8 @@ Für kommerzielle Nutzung kontaktiere bitte den Autor.
 - **[Next.js](https://nextjs.org/)** – React-Framework für SSR und SSG.  
 - **[Tailwind CSS](https://tailwindcss.com/)** – Utility-first CSS-Framework.  
 - **[AOS](https://michalsnik.github.io/aos/)** – Animationsbibliothek für Scroll-Effekte.  
-- **[Glightbox](https://biati-digital.github.io/glightbox/)** – Lightbox für Bildergalerien.  
-- **[Swiper](https://swiperjs.com/)** - Moderne und anpassbare Touch-Slider-Bibliothek.
+- **[Fancybox](https://www.npmjs.com/package/fancybox)** –  Flexible und anpassbare Galerie für Bilder und Medien.
+- **[Glidejs](https://glidejs.com/docs/setup)** - Moderne und anpassbare Touch-Slider-Bibliothek.
 
 ---
 
