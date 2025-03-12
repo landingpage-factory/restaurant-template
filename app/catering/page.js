@@ -1,4 +1,5 @@
 // app/catering/page.js
+"use client";
 import Image from "next/image";
 import Parallax from "../components/Parallax";
 import { PiFlowerLotusThin } from "react-icons/pi";

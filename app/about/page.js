@@ -1,4 +1,5 @@
 // app/about/page.js
+"use client";
 import Image from "next/image";
 import { Link as ScrollLink } from "react-scroll";
 import Parallax from "../components/Parallax";

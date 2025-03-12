@@ -1,3 +1,4 @@
+// app/components/SwiperComponent.js
 "use client";
 import { useEffect, useRef } from "react";
 import Glide from "@glidejs/glide";

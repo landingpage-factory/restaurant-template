@@ -1,4 +1,5 @@
 // app/gallery/page.js
+"use client";
 import { Link as ScrollLink } from "react-scroll";
 import Parallax from "../components/Parallax";
 import CateringGallery from "../components/CateringGallery";
