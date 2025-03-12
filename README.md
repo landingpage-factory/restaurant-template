@@ -86,8 +86,8 @@ Für kommerzielle Nutzung kontaktiere bitte den Autor.
 - **Erste Version**:  
   - Grundgerüst mit Next.js und Tailwind CSS.  
   - Parallax-Effekte und AOS-Animationen.  
-  - Glightbox für Bildergalerien.
-  - Swiper für anpassbare Touch-Slider-Bibliothek  
+  - Fancybox für Bildergalerien.
+  - Glidejs für anpassbare Touch-Slider-Bibliothek  
 
 ---
 
