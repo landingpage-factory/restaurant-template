@@ -85,16 +85,6 @@ export default function Navbar() {
             Veranstaltungen
           </ScrollLink>
           <ScrollLink
-            to="menu"
-            smooth={true}
-            duration={500}
-            offset={-50}
-            className={`hover:text-gray-300 hover:cursor-pointer ${activeSection === 'menu' ? 'active' : ''}`}
-          >
-            Menü
-          </ScrollLink>
-          
-          <ScrollLink
             to="reservations"
             smooth={true}
             duration={500}
@@ -102,6 +92,15 @@ export default function Navbar() {
             className={`hover:text-gray-300 hover:cursor-pointer ${activeSection === 'reservations' ? 'active' : ''}`}
           >
             Tisch Reservierung
+          </ScrollLink>
+          <ScrollLink
+            to="menu"
+            smooth={true}
+            duration={500}
+            offset={-50}
+            className={`hover:text-gray-300 hover:cursor-pointer ${activeSection === 'menu' ? 'active' : ''}`}
+          >
+            Menü
           </ScrollLink>
           <ScrollLink
             to="gallery"
@@ -175,17 +174,6 @@ export default function Navbar() {
               Veranstaltungen
             </ScrollLink>
             <ScrollLink
-              to="menu"
-              smooth={true}
-              duration={500}
-              offset={-50}
-              className={`hover:text-gray-300 ${activeSection === 'menu' ? 'active' : ''}`}
-              onClick={toggleMenu}
-            >
-              Menü
-            </ScrollLink>
-            
-            <ScrollLink
               to="reservations"
               smooth={true}
               duration={500}
@@ -194,6 +182,16 @@ export default function Navbar() {
               onClick={toggleMenu}
             >
               Tisch Reservierung
+            </ScrollLink>
+            <ScrollLink
+              to="menu"
+              smooth={true}
+              duration={500}
+              offset={-50}
+              className={`hover:text-gray-300 ${activeSection === 'menu' ? 'active' : ''}`}
+              onClick={toggleMenu}
+            >
+              Menü
             </ScrollLink>
             <ScrollLink
               to="gallery"

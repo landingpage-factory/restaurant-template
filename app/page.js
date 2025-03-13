@@ -81,10 +81,10 @@ export default function Home() {
         {/* Das Overlay ist hier */}
       </div>
     </section>
-    <Events/>
-    <Menu /> 
     <CateringPage/>
+    <Events/>
     <Reservierung/>
+    <Menu /> 
     <GalleryPage/>
     <About/>
     <ContactPage/>
