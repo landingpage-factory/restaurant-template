@@ -1,4 +1,5 @@
-'use client';
+// app/components/NewsletterForm.js
+"use client";
 import { useState } from 'react';
 
 export default function NewsletterForm() {

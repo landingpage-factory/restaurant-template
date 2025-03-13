@@ -47,15 +47,6 @@ const specials = [
 export default function Specials() {
   const [activeSpecial, setActiveSpecial] = useState(specials[0]);
   
-  useEffect(() => {
-    import("aos").then((AOS) => {
-      AOS.init({
-        duration: 1000,
-        once: false,
-      });
-    });
-  }, []);
-  
   return (
     <>
       {/* Parallax-Sektion */}
@@ -127,7 +118,6 @@ export default function Specials() {
                   <Image
                     src={activeSpecial.image}
                     alt={activeSpecial.name}
-                    priority={true}
                     fill
               sizes="(max-width: 700px) 100vw, (max-width: 768px) 50vw, 33vw"
               className="object-cover transform transition-transform duration-300 group-hover:scale-105"
